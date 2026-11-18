@@ -1,0 +1,216 @@
+<!DOCTYPE html>
+<html lang="ar" dir="rtl">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Le français à l’école – Alhossam Integrated Schools</title>
+<link href="https://fonts.googleapis.com/css2?family=Baloo+2:wght@600;800&family=Cairo:wght@500;700&display=swap" rel="stylesheet">
+<style>
+:root{--bg:#f3f8ff;--card:#fff;--ink:#17315c;--mut:#5d6f8f;--c:#1e88e5;--tint:#e3f1fd}
+*{box-sizing:border-box}
+body{margin:0;background:var(--bg);color:var(--ink);font-family:Cairo,system-ui,sans-serif;padding-bottom:40px}
+header{background:linear-gradient(160deg,#1565c0,#1e88e5 55%,#00acc1);color:#fff;text-align:center;padding:28px 16px 64px;border-radius:0 0 40px 40px}
+header h1{font:800 clamp(2rem,6vw,3.2rem)/1.1 "Baloo 2",sans-serif;margin:6px 0;direction:ltr}
+header p{margin:4px 0;opacity:.95}
+.pill{display:inline-block;background:#fdd24f;color:#17315c;font:800 1rem "Baloo 2";padding:6px 18px;border-radius:30px;direction:ltr}
+.bar{max-width:900px;margin:-40px auto 0;padding:0 12px}
+.ctl{background:#fff;border-radius:20px;padding:12px;display:flex;flex-wrap:wrap;gap:10px;align-items:center;justify-content:center;box-shadow:0 6px 20px #17315c22}
+.ctl label{font-size:.9rem;color:var(--mut)}
+select,button{font-family:inherit}
+select{padding:6px 10px;border-radius:12px;border:2px solid #cfe0f5;max-width:220px;direction:ltr}
+.tg{display:flex;border:2px solid #cfe0f5;border-radius:14px;overflow:hidden}
+.tg button{border:0;background:#fff;padding:6px 14px;font-weight:700;cursor:pointer}
+.tg button.on{background:var(--ink);color:#fff}
+nav{display:flex;gap:8px;overflow-x:auto;padding:14px 12px;max-width:900px;margin:0 auto;scrollbar-width:thin}
+nav button{flex:none;border:2px solid var(--c);background:#fff;color:var(--ink);border-radius:30px;padding:6px 14px;font-weight:700;cursor:pointer;display:flex;gap:6px;align-items:center}
+nav button.on{background:var(--c);color:#fff}
+main{max-width:900px;margin:0 auto;padding:0 12px}
+.sh{background:var(--c);color:#fff;border-radius:24px;padding:16px 20px;display:flex;align-items:center;gap:14px;margin-bottom:12px}
+.sh .e{font-size:2.2rem;background:#fff;border-radius:50%;width:62px;height:62px;display:grid;place-items:center}
+.sh h2{margin:0;font:800 1.6rem "Baloo 2";direction:ltr}
+.sh small{display:block;font-size:1.05rem}
+.sh .all{margin-inline-start:auto;border:0;background:#fff;color:var(--ink);font-weight:800;padding:8px 14px;border-radius:20px;cursor:pointer}
+.grid{display:grid;gap:10px}
+.card{background:var(--card);border:2px solid var(--c);border-radius:20px;padding:12px 14px;display:grid;grid-template-columns:auto 1fr auto;gap:12px;align-items:center;cursor:pointer;text-align:start;width:100%;font-family:inherit;color:inherit;transition:transform .15s,background .15s}
+.card:hover{background:var(--tint)}
+.card:focus-visible,nav button:focus-visible,.tg button:focus-visible{outline:3px solid #fdd24f;outline-offset:2px}
+.card.play{background:var(--tint);transform:scale(1.02)}
+.card .em{font-size:1.9rem;background:var(--tint);border-radius:14px;width:54px;height:54px;display:grid;place-items:center}
+.fr{font:800 1.3rem/1.25 "Baloo 2",sans-serif;direction:ltr;text-align:left;display:block}
+.ar{font-weight:700;display:block;margin-top:2px}
+.tr{color:var(--mut);font-size:.92rem;display:block}
+.spk{font-size:1.4rem;background:var(--c);color:#fff;border-radius:50%;width:44px;height:44px;display:grid;place-items:center}
+.card.play .spk{animation:p .8s infinite alternate}
+@keyframes p{to{transform:scale(1.18)}}
+.ch{background:#e0f5f1;border:2px dashed #00897b;border-radius:24px;padding:16px;margin-top:14px;text-align:center}
+.days{display:flex;gap:8px;justify-content:center;flex-wrap:wrap}
+.days label{background:#fff;border-radius:14px;padding:10px 14px;font-size:.9rem;cursor:pointer;display:grid;gap:6px;place-items:center}
+.days input{width:26px;height:26px;accent-color:#00897b}
+.ch textarea{width:100%;min-height:110px;margin-top:10px;border:2px solid #00897b;border-radius:16px;padding:10px;font:inherit;direction:ltr}
+.note{text-align:center;color:var(--mut);font-size:.85rem;margin:18px 12px}
+@media(prefers-color-scheme:dark){:root{--bg:#0f1a2e;--card:#16253f;--ink:#e8f0ff;--mut:#9fb2d3;--tint:#1f3358}.ctl,.tg button,nav button,.days label,select{background:#16253f;color:var(--ink)}.tg button.on{background:#fdd24f;color:#17315c}.ch{background:#12302e}}
+@media(prefers-reduced-motion:reduce){*{animation:none!important;transition:none!important}}
+</style>
+</head>
+<body>
+<header>
+<div style="font-size:1.8rem">📚 ✏️ 🎒 ⭐ 💬 🌈</div>
+<h1>Le français à l’école</h1>
+<span class="pill">Je parle français à l’école !</span>
+<p>اضغط على أي جملة وهتسمع نطقها بالفرنسي 🔊</p>
+<p style="font-size:.85rem">Alhossam Integrated Schools · Pocket Guide</p>
+</header>
+<div class="bar"><div class="ctl">
+<label>🔊 الصوت: <select id="vs"></select></label>
+<div class="tg" role="group" aria-label="السرعة"><button id="n" class="on">🐇 عادي</button><button id="s">🐢 بطيء</button></div>
+</div></div>
+<nav id="nav"></nav>
+<main id="m"></main>
+<p class="note" id="note"></p>
+<script>
+const S=[
+["✨","Phrases magiques","الجمل السحرية","#f5b400",[
+["👋","Bonjour !","صباح الخير / نهارك سعيد","بونجور"],
+["🙏","Merci !","شكرًا","ميرسي"],
+["😊","S’il vous plaît.","من فضلك","سيل فو بليه"],
+["🙇","Excusez-moi.","بعد إذنك / آسف","إكسكيوزيه-موا"],
+["🤔","Je n’ai pas compris.","مفهمتش","جو نيه با كومبري"],
+["🔁","Pouvez-vous répéter ?","ممكن تعيد/ي تاني؟","بوفيه-فو ريبيتيه"],
+["❓","Comment dit-on… en français ?","إزاي نقول... بالفرنسي؟","كومون دي-تون... آن فرانسيه"],
+["🤷","Je ne sais pas.","معرفش","جو نو سيه با"]]],
+["👋","Salutations","التحيات","#1e88e5",[
+["☀️","Bonjour, Madame / Monsieur.","صباح الخير يا مدام / يا مسيو","بونجور، مادام / موسيو"],
+["🌙","Bonsoir.","مساء الخير","بونسوار"],
+["🤝","Salut !","أهلاً! (للأصحاب)","سالو"],
+["💬","Comment ça va ?","عامل إيه؟","كومون سا فا"],
+["😄","Ça va bien, merci.","كويس، شكرًا","سا فا بيان، ميرسي"],
+["🙋","Et toi ?","وإنت؟","إي توا"],
+["👋","Au revoir !","مع السلامة","أو رفوار"],
+["📅","À demain !","أشوفك بكرة","آ ديمان"]]],
+["🏫","En classe","داخل الفصل","#00acc1",[
+["✅","Je suis présent(e).","أنا حاضر/ة","جو سوي بريزون(ت)"],
+["🚪","Puis-je entrer ?","ممكن أدخل؟","بوي-جو آنتريه"],
+["🚶","Puis-je sortir ?","ممكن أخرج؟","بوي-جو سورتير"],
+["🪑","Puis-je m’asseoir ?","ممكن أقعد؟","بوي-جو ماسوار"],
+["📖","Quelle page ?","صفحة كام؟","كيل باج"],
+["🎒","J’ai oublié mon livre.","نسيت كتابي","جيه أوبليه مون ليفر"],
+["✏️","Je n’ai pas de stylo.","معنديش قلم","جو نيه با دو ستيلو"],
+["🖍","Puis-je emprunter un stylo ?","ممكن أستلف قلم؟","بوي-جو آنبرونتيه آن ستيلو"]]],
+["👩‍🏫","Avec le professeur","التعامل مع المدرسين","#ff7043",[
+["✋","J’ai une question.","عندي سؤال","جيه أون كيسيتيون"],
+["🙋","Je peux répondre ?","ممكن أجاوب؟","جو بو ريبوندر"],
+["🧠","Pouvez-vous expliquer encore ?","ممكن تشرح/ي تاني؟","بوفيه-فو إكسبليكيه آنكور"],
+["🐢","Plus lentement, s’il vous plaît.","أبطأ شوية من فضلك","بلو لانتمان، سيل فو بليه"],
+["👍","C’est bon comme ça ?","كده تمام؟","سي بون كوم سا"],
+["⏳","Je n’ai pas fini.","لسه مخلصتش","جو نيه با فيني"],
+["⏰","Désolé(e), je suis en retard.","آسف، اتأخرت","ديزوليه، جو سوي زان روتار"],
+["📝","Je n’ai pas fait mes devoirs.","معملتش الواجب","جو نيه با فيه ميه ديفوار"]]],
+["🧭","Couloirs et escaliers","الطرقات والسلالم","#7e57c2",[
+["🔢","Où est la salle douze ?","فين فصل ١٢؟","أو إيه لا سال دوز"],
+["🏢","Où est le bureau du directeur ?","فين مكتب المدير؟","أو إيه لو بيرو دو ديريكتور"],
+["🚻","Où sont les toilettes ?","فين الحمام؟","أو سون لي توالت"],
+["⬆️","On monte au premier étage.","هنطلع الدور الأول","أون مونت أو بروميه إيتاج"],
+["⬇️","On descend.","هننزل","أون ديسان"],
+["🚷","Doucement, ne courez pas !","براحة، متجروش!","دوسمان، نو كوريه با"],
+["🙇","Pardon, je passe.","بعد إذنك، عايز/ة أعدّي","باردون، جو باس"],
+["🏃","Suis-moi !","تعالى ورايا!","سوي-موا"]]],
+["⚽","La cour et la récréation","الحوش والفسحة","#43a047",[
+["🔔","C’est la récréation !","الفسحة!","سي لا ريكرياسيون"],
+["🎮","On joue ?","نلعب؟","أون جو"],
+["👫","Tu veux jouer avec nous ?","عايز/ة تلعب معانا؟","تو فو جويه أفيك نو"],
+["☝️","C’est mon tour.","ده دوري","سي مون توور"],
+["👉","C’est à toi.","ده دورك","سي تا توا"],
+["⚖️","Ce n’est pas juste !","ده مش عدل!","سو نيه با جوست"],
+["⚽","Passe-moi le ballon !","ادّيني الكورة!","باس-موا لو بالون"],
+["⚠️","Attention !","خد/ي بالك!","أتانسيون"]]],
+["🤝","Amis et camarades","الأصدقاء والزملاء","#ec407a",[
+["🏷","Je m’appelle…","اسمي...","جو مابيل..."],
+["🗣","Comment tu t’appelles ?","اسمك إيه؟","كومون تو تابيل"],
+["🤩","Enchanté(e) !","اتشرفت!","أنشانتيه"],
+["💛","Tu es mon ami(e).","إنت صاحبي / صاحبتي","تو إيه مون نامي"],
+["📚","On travaille ensemble ?","نذاكر مع بعض؟","أون ترافاي أنسانبل"],
+["🌟","Merci pour ton aide.","شكرًا على مساعدتك","ميرسي بور تون إيد"],
+["💡","Tu as raison.","عندك حق","تو آ ريزون"],
+["😅","Pardon, c’était sans faire exprès.","آسف، مكانش قصدي","باردون، سيتيه سان فير إكسبريه"]]],
+["🥪","La cantine et les toilettes","المقصف والحمام","#fb8c00",[
+["🍽","J’ai faim.","أنا جعان/ة","جيه فان"],
+["🥤","J’ai soif.","أنا عطشان/ة","جيه سواف"],
+["🥪","Je voudrais un sandwich, s’il vous plaît.","عايز/ة ساندوتش من فضلك","جو فودريه آن ساندويتش، سيل فو بليه"],
+["💧","De l’eau, s’il vous plaît.","مية من فضلك","دو لو، سيل فو بليه"],
+["💰","Ça coûte combien ?","بكام ده؟","سا كوت كومبيان"],
+["😋","Bon appétit !","بالهنا والشفا!","بون أبيتي"],
+["🚻","Puis-je aller aux toilettes ?","ممكن أروح الحمام؟","بوي-جو أليه أو توالت"],
+["🧼","Où puis-je me laver les mains ?","فين أغسل إيديّ؟","أو بوي-جو مو لافيه ليه مان"]]],
+["📚","Bibliothèque et laboratoire","المكتبة والمعامل","#3949ab",[
+["🤫","Silence, s’il vous plaît.","هدوء من فضلك","سيلانس، سيل فو بليه"],
+["🔍","Je cherche un livre.","بدوّر على كتاب","جو شيرش آن ليفر"],
+["📕","Puis-je emprunter ce livre ?","ممكن أستعير الكتاب ده؟","بوي-جو آنبرونتيه سو ليفر"],
+["↩️","Je rends mon livre.","برجّع كتابي","جو ران مون ليفر"],
+["📖","Je lis une histoire.","بقرا قصة","جو لي أون إيستوار"],
+["🥽","Je mets mes lunettes de protection.","بلبس نضارة الحماية","جو ميه ميه لونيت دو بروتيكسيون"],
+["🚫","Attention, c’est dangereux !","خد/ي بالك، ده خطر!","أتانسيون، سيتيه دانجرو"],
+["🧹","Je range mes affaires.","برتّب حاجتي","جو رانج ميه زافير"]]],
+["🚑","Urgences et aide","المواقف الطارئة وطلب المساعدة","#e53935",[
+["🆘","Au secours !","الحقوني!","أو سيكور"],
+["🙏","J’ai besoin d’aide.","محتاج/ة مساعدة","جيه بوزوان ديد"],
+["🤒","Je suis malade.","أنا تعبان/ة","جو سوي مالاد"],
+["🤕","J’ai mal à la tête.","دماغي بتوجعني","جيه مال آ لا تيت"],
+["🤢","J’ai mal au ventre.","بطني بتوجعني","جيه مال أو فانتر"],
+["🩹","Je me suis fait mal.","اتعورت","جو مو سوي فيه مال"],
+["👩‍⚕️","Appelez l’infirmière, s’il vous plaît.","نادي الممرضة من فضلك","أبليه لانفيرمييير، سيل فو بليه"],
+["🎒","J’ai perdu mon sac.","ضيّعت شنطتي","جيه بيردي مون ساك"]]],
+["🌈","Respect et défi","السلوك والاحترام + التحدي","#00897b",[
+["🙋","Je lève la main pour parler.","برفع إيدي عشان أتكلم","جو ليف لا مان بور بارليه"],
+["👂","J’écoute mes camarades.","باسمع زمايلي","جيكوت ميه كامارد"],
+["🤲","Je partage.","بشارك","جو بارتاج"],
+["💎","Je dis la vérité.","بقول الحقيقة","جو دي لا فيريتيه"]]]
+];
+const $=id=>document.getElementById(id),nav=$("nav"),m=$("m");
+let cur=0,slow=false,voice=null,q=0;
+const days=["الأحد","الاثنين","الثلاثاء","الأربعاء","الخميس"];
+const clean=t=>t.replace(/\((e|t)\)/g,"").replace(/…/g,"").replace(/’/g,"'");
+function voices(){
+  if(!("speechSynthesis" in window)){$("note").textContent="⚠️ المتصفح ده مش بيدعم النطق الصوتي. جرّب Chrome أو Safari أو Edge.";return}
+  const fr=speechSynthesis.getVoices().filter(v=>/^fr/i.test(v.lang));
+  const sc=v=>(/fr[-_]FR/i.test(v.lang)?10:0)+(/neural|natural|online|google|premium|enhanced/i.test(v.name)?20:0)+(/thomas|amélie|amelie|audrey|denise|henri|eloise|vivienne/i.test(v.name)?5:0);
+  fr.sort((a,b)=>sc(b)-sc(a));
+  const sel=$("vs");sel.innerHTML="";
+  fr.forEach((v,i)=>sel.add(new Option(v.name+" ("+v.lang+")",i)));
+  voice=fr[0]||null;sel.onchange=()=>voice=fr[sel.value];
+  $("note").textContent=fr.length?"💡 الصوت بيتولّد من جهازك. لو عايز أحسن جودة اختار صوت Neural / Google / Premium من القائمة فوق.":"⚠️ مفيش صوت فرنسي مثبّت على جهازك. ضيف لغة Français من إعدادات النظام (Text-to-speech) وارجع افتح الصفحة.";
+}
+if("speechSynthesis" in window){speechSynthesis.onvoiceschanged=voices;voices()}
+function say(t,done){
+  if(!("speechSynthesis" in window))return;
+  speechSynthesis.cancel();
+  const u=new SpeechSynthesisUtterance(clean(t));
+  u.lang="fr-FR";if(voice)u.voice=voice;u.rate=slow?.55:.92;
+  u.onend=u.onerror=()=>done&&done();
+  speechSynthesis.speak(u);
+}
+function playAll(i=0,list=S[cur][4]){
+  const cards=[...m.querySelectorAll(".card")],t=++q;
+  const go=k=>{cards.forEach(c=>c.classList.remove("play"));if(k>=list.length||t!==q)return;
+    cards[k].classList.add("play");cards[k].scrollIntoView({block:"center",behavior:"smooth"});
+    say(list[k][1],()=>setTimeout(()=>go(k+1),500))};
+  go(i);
+}
+function render(){
+  const [e,fr,ar,c,items]=S[cur];q++;speechSynthesis&&speechSynthesis.cancel();
+  document.documentElement.style.setProperty("--c",c);
+  [...nav.children].forEach((b,i)=>b.classList.toggle("on",i==cur));
+  m.innerHTML=`<div class="sh"><div class="e">${e}</div><div><h2>${fr}</h2><small>${ar}</small></div><button class="all" id="pa">▶ اسمع الكل</button></div><div class="grid">`+
+  items.map((x,i)=>`<button class="card" data-i="${i}"><span class="em">${x[0]}</span><span><span class="fr">${x[1]}</span><span class="ar">${x[2]}</span><span class="tr">${x[3]}</span></span><span class="spk">🔊</span></button>`).join("")+`</div>`+
+  (cur==S.length-1?`<div class="ch"><h3 style="margin:0;font-family:'Baloo 2'">🏆 Mon défi de la semaine</h3><p>كل يوم قول 3 جمل بالفرنسي وعلّم ✔️</p><div class="days">${days.map((d,i)=>`<label>${d}<input type="checkbox" data-d="${i}"></label>`).join("")}</div><h3 style="font-family:'Baloo 2';margin-bottom:0">✍️ Mes nouvelles phrases</h3><textarea id="np" placeholder="اكتب هنا أي جملة فرنسية جديدة اتعلمتها"></textarea></div>`:"");
+  m.querySelectorAll(".card").forEach(b=>b.onclick=()=>{q++;m.querySelectorAll(".card").forEach(x=>x.classList.remove("play"));b.classList.add("play");say(items[b.dataset.i][1],()=>b.classList.remove("play"))});
+  $("pa").onclick=()=>playAll();
+  m.querySelectorAll("[data-d]").forEach(k=>{try{k.checked=localStorage.getItem("d"+k.dataset.d)=="1"}catch(_){}k.onchange=()=>{try{localStorage.setItem("d"+k.dataset.d,k.checked?1:0)}catch(_){}}});
+  const np=$("np");if(np){try{np.value=localStorage.getItem("np")||""}catch(_){}np.oninput=()=>{try{localStorage.setItem("np",np.value)}catch(_){}}}
+}
+S.forEach((s,i)=>{const b=document.createElement("button");b.innerHTML=`<span>${s[0]}</span>${s[2]}`;b.onclick=()=>{cur=i;render()};nav.append(b)});
+$("n").onclick=()=>{slow=false;$("n").classList.add("on");$("s").classList.remove("on")};
+$("s").onclick=()=>{slow=true;$("s").classList.add("on");$("n").classList.remove("on")};
+render();
+</script>
+</body>
+</html>
